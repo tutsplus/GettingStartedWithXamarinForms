@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   x:Class="MyRecipeBox.Views.RecipeSummaryPage"
+             Title="{Binding Name}"
+             Padding="30">
+  <StackLayout Spacing="10" VerticalOptions="FillAndExpand">
+    <Label Text="Recipe Name" TextColor="Red"/>
+    <Label Text="{Binding Name}" />
+    <Label Text="Recipe Description" TextColor="Red"/>
+    <Label Text="{Binding Description}"/>
+    <Label Text="Total Prep Time" TextColor="Red"/>
+    <Label Text="{Binding PrepTime}"/>
+    <Label Text="Total Cook Time" TextColor="Red"/>
+    <Label Text="{Binding CookingTime}"/>
+    <Label Text="Directions" TextColor="Red"/>
+    <ListView ItemsSource="{Binding Directions}">
+    </ListView>
+  </StackLayout>
+</ContentPage>
